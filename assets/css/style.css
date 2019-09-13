@@ -1,0 +1,18 @@
+
+body{
+    
+    background-image :url("../images/d48.gif");
+    
+}
+
+        .container{
+            margin-top:35px;
+            background-color: aqua;
+            font-family:'Anton', sans-serif;
+        }
+
+        .nav-wrapper{
+
+            background-color: brown;
+            
+        }
