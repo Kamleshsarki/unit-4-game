@@ -4,7 +4,7 @@ let wins = 0
 let losses = 0
 const renderGems = () => {
     current = 0
-    goal = Math.floor(Math.random() * 100) + 40
+    goal = Math.floor(Math.random() * 100) + 19
     document.getElementById('gems').innerHTML = ' '
     for (let i = 0; i < 4; i++) {
         const random = Math.floor(Math.random() * 12) + 1
@@ -31,7 +31,8 @@ document.addEventListener('click', event => {
         let gemvalue = parseInt(event.target.dataset.value)
         current += gemvalue
 
-        console.log(`Current: ${current}, Goal: ${goal}`)
+       //s console.log(`Current: ${current}, Goal: ${goal}`)
+
         if (current === goal) {
             swal("Congratulation", "You win!", "success");
             wins++
